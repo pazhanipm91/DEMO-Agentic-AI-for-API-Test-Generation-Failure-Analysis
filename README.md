@@ -30,8 +30,75 @@ This system adapts, reasons, and explains failures using agent collaboration.
   "recommended_action": "Update expected response or validate API regression"
 }
 
-## Credits
-## 👤 Author
+
+Each agent has a **single responsibility** and communicates via structured outputs, making the system explainable, extensible, and production-ready.
+
+---
+
+## 🧩 Core Agents
+
+### 🧠 Planner Agent
+- Parses OpenAPI specifications
+- Identifies endpoints and risk areas
+- Creates a structured test strategy (happy path, negative, boundary)
+
+### 🧪 Test Generator Agent
+- Generates executable `pytest` API tests
+- Converts abstract plans into real test code
+
+### 🔍 Failure Analyzer Agent
+- Analyzes pytest execution logs
+- Classifies failures (assertion, schema mismatch, server error, etc.)
+- Produces root cause explanations with confidence scoring
+
+---
+
+## 🔍 Why Agentic AI?
+Traditional LLM-based automation stops at content generation.
+
+This system:
+- Uses **reasoning-based agents**
+- Separates planning, execution, and evaluation
+- Avoids prompt-only workflows
+- Enables deterministic behavior with explainability
+
+This architecture is inspired by **real-world GenAI systems deployed in production**.
+
+---
+
+## 🚀 Features
+- Risk-based API test planning
+- Autonomous pytest generation
+- Failure classification & root cause analysis
+- Modular agent design
+- CI/CD-friendly execution model
+
+---
+
+## 🧪 Example Failure Analysis Output
+
+```json
+{
+  "failure_type": "ASSERTION_ERROR",
+  "confidence": 0.85,
+  "explanation": "Expected status code mismatch detected",
+  "recommended_action": "Validate API regression or update expected response"
+}
+
+## How TO Run Locally"
+python -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
+
+pip install -r requirements.txt
+
+python app.py
+
+
+• Built a production-grade Agentic AI framework for autonomous API test generation and intelligent failure analysis using GenAI and multi-agent orchestration.
+
+
+### Credits
+### 👤 Author
 
 Lead AI Engineer with 7+ years of experience building production-grade AI systems,
 specializing in GenAI, Agentic AI, API platforms, and intelligent test automation.
