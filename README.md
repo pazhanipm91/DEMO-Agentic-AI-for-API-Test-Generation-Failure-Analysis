@@ -30,3 +30,10 @@ This system adapts, reasons, and explains failures using agent collaboration.
   "recommended_action": "Update expected response or validate API regression"
 }
 
+## Credits
+## 👤 Author
+
+Lead AI Engineer with 7+ years of experience building production-grade AI systems,
+specializing in GenAI, Agentic AI, API platforms, and intelligent test automation.
+
+LinkedIn: https://www.linkedin.com/in/pazhanichamy-pandi-77a60b2bb/
