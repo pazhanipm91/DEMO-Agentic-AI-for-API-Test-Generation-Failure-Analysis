@@ -1,0 +1,22 @@
+agentic-api-testing/
+│
+├── agents/
+│   ├── planner_agent.py
+│   ├── test_generator_agent.py
+│   ├── failure_analyzer_agent.py
+│
+├── core/
+│   ├── llm_client.py
+│   ├── api_parser.py
+│   ├── test_executor.py
+│
+├── samples/
+│   ├── openapi.yaml
+│   └── failing_test.log
+│
+├── tests/
+│   └── generated_tests/
+│
+├── app.py
+├── requirements.txt
+└── README.md
